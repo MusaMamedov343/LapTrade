@@ -1,0 +1,181 @@
+.explore{
+    margin-bottom: 50px;
+}
+
+
+.imgHolder{
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgHolder::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0000007e;
+    z-index: 0;
+    backdrop-filter: blur(3px);
+}
+
+.imgHolder > *{
+    z-index: 2;
+    position: relative;
+}
+
+.imgHolder h1{
+    letter-spacing: 2px;
+
+}
+
+
+.shop
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 100px;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.searchCon{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+.inputCon{
+    display: flex;
+    width: 25%;
+    gap: 10px;
+}
+
+.searchCon h2{
+    margin: 0;
+    font-weight: 300;
+    left: 1.4px;
+    margin-right: 20px;
+}
+
+.searchCon input{
+    background: none;
+    border: none;
+    outline: none;
+    color: #bfbfbf;
+    border-bottom: #303030 1px solid;
+    flex-grow: 1;
+}
+
+
+.searchCon button{
+    background: #fff;
+    border: none;
+    outline: none;
+    color: #7C00EE;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters{
+    background: #303030;
+    padding: 20px;
+    border-radius: 20px;
+}   
+
+.filters h4{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.box{
+    display: flex;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    color: #e4e4e4;
+    background: #535353;
+    border-radius: 20px;
+    padding: 7px 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.activeBox{
+    background: #7C00EE;
+}
+
+.filterGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.groupContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.filterGroup > input[type="range"] {
+    width: 100%;
+    height: 5px;
+    background: #535353;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+}
+
+.filterGroup > input[type="range"]::-webkit-slider-runnable-track {
+    height: 5px;
+    background: #7C00EE;
+    border-radius: 5px;
+}
+
+.filterGroup > input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+.filterGroup > input[type="range"]::-moz-range-track {
+    height: 5px;
+    background: #7C00EE;
+    border-radius: 5px;
+}
+
+.filterGroup > span{
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}

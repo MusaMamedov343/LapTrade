@@ -1,0 +1,160 @@
+.home main{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.imgHolder > img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.imgHolder > img:hover{
+    transform: scale(1.05);
+}
+
+.imgHolder{
+    padding: 40px;
+    overflow: hidden;
+}
+
+.leftContent{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+
+.find > h1{
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin: 0;
+    box-sizing: border-box;
+    text-wrap-mode: nowrap;
+}
+
+.find > p{
+    font-size: 18px;
+    color: #a9a9a9;
+    margin: 10px 0 50px 0;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.inputHolder{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    background: #303030;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.inputHolder > input{
+    border: none;
+    outline: none;
+    color: #d2d2d2;
+    background: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.inputHolder > svg{
+    font-size: 28px;
+}
+
+.search > a > button{
+    background: #7C00EE;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.search > a > button:hover{
+    background: #5900b1;
+}
+
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 150px 0;
+    gap: 40px;
+}
+
+.categories h1{
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.categoryList{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.categoryList > a{
+    text-decoration: none;
+}
+
+.imgHolderCard > img{
+    width: 80%;
+    object-fit: cover;
+    cursor: pointer;
+    overflow: hidden;
+    filter:brightness(0.8) contrast(1.5);
+}
+
+.imgHolderCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.categoryCard{
+    background: #303030;
+    color: #fff;
+    padding: 40px 20% 10px 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 24px;
+    transition: all .2s ;
+}
+
+.categoryCard:hover{
+    transform: scale(1.05);
+}
+
+.categoryCard > h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    text-wrap: nowrap;
+    text-wrap-mode: nowrap;
+}
+

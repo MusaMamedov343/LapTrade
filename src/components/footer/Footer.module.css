@@ -1,0 +1,55 @@
+.footer{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background: #303030;
+    width: 100%;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer h1, .column h5{
+    margin: 0;
+}
+
+.footer h1{
+    letter-spacing: 1.6px;
+}
+
+.column a{
+    text-decoration: none;
+    color: #d3d3d3;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.column h5{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+    font-size: 32px;
+    cursor: pointer;
+}

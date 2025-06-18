@@ -1,0 +1,68 @@
+.header{
+    display: grid;
+    grid-template-columns: 1fr 9fr 2fr;
+    gap: 72px;
+    align-items: center;
+    padding: 36px 0;
+    color: white;
+    border-bottom: 3px solid #303030;
+}
+
+.icon{
+    font-size: 36px;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    user-select: none;
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+.title{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.2s ease-out; 
+    padding: 0 15px;
+    color: #fff
+}
+
+.cartLink > svg {
+    color: #fff;
+}
+
+
+.cartLink > svg:hover{
+    color: #7C00EE;
+}
+
+.header > nav{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+}
+
+.link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s ease-out;
+}
+
+.header > nav > a:hover, .activeLink, .activeLink > svg{
+    color: #7C00EE;
+}

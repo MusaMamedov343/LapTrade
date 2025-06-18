@@ -1,0 +1,38 @@
+.back{
+    padding: 15px 20px;
+}
+
+.back > a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.back > a:hover{
+    transform: translateX(-10px);
+    gap: 15px;
+}
+
+.back> a > h5{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.stars{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.starFilled{
+    color: #7C00EE;
+}
+
+.halfFilled{
+    color: #7C00EE;
+}
+  
